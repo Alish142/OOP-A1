@@ -3,5 +3,12 @@ public class healthprofessional {
     protected String name ;
     protected String qualification;
 
+
+    public healthprofessional(){
+        this.id = 0;
+        this.name = "Unknown";
+        this.qualification = "Not specified";
+    }
+
     
 }
