@@ -15,6 +15,13 @@ public class Healthprofessional {
         this.name = name;
         this.qualification = qualification;
     }
+    
+    public void printDetails(){
+        System.out.println("ID:" + id);
+        System.out.println("Name:" + name);
+        System.out.println("Qualification:" + qualification);
+
+    }
 
     
 }
