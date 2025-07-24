@@ -9,8 +9,16 @@ public class Appointment {
         this.mobile = "Unknown";
         this.timeSlot = "Not set";
         this.doctor = null;
+    }
+
+    public Appointment(String patientName, String mobile, String timeSlot, HealthProfessional doctor){
+        this.patientName = patientName;
+        this.mobile = mobile;
+        this.timeSlot = timeSlot;
+        this.doctor = doctor;
+    }
 
 
     }
     
-}
+
