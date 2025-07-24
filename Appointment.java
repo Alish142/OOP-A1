@@ -38,6 +38,10 @@ public class Appointment {
         return patientmobile;
     }
 
+    public String getPatientName(){
+        return patientName;
+    }
+
 
     }
     
