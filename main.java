@@ -22,6 +22,15 @@ public class Main {
 
         ArrayList<Appointment> Appointments = new ArrayList<>();
 
+        public static void createAppointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional doctor) {
+            if (doctor != null && patientName != null && patientMobile != null && preferredTimeSlot != null) {
+                Appointment appointment = new Appointment(patientName, patientMobile, preferredTimeSlot, doctor);
+                appointments.add(appointment);
+                System.out.println("Appointment created for " + patientName);
+            } else {
+                System.out.println("Error: All fields must be provided to create an appointment.");
+            }
+        }
         
     }
 }
