@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void Main (String[] args) {
 
@@ -15,5 +17,11 @@ public class Main {
         specialist1.printDetails();
         specialist2.printDetails();
         System.out.println("------------------------------");
+
+        System.out.println("Collection of Appointments");
+
+        ArrayList<Appointment> Appointments = new ArrayList<>();
+
+        
     }
 }
