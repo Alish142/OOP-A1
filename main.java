@@ -32,10 +32,11 @@ public class Main {
         }
     }
 // deleteing exiting appointments
-      public static void cancelAppointment(String mobile) {
+      
+    public static void cancelAppointment(String patientmobile) {
         boolean found = false;
         for (int i = 0; i < appointments.size(); i++) {
-            if (appointments.get(i).getPatientMobile().equals(mobile)) {
+            if (appointments.get(i).getPatientMobile().equals(patientmobile)) {
                 System.out.println("Cancelling appointment for: " + appointments.get(i).getPatientName());
                 appointments.remove(i);
                 found = true;
@@ -43,7 +44,7 @@ public class Main {
             }
         }
         if (!found) {
-            System.out.println("No appointment found with mobile number: " + mobile);
+            System.out.println("No appointment found with mobile number: " + patientmobile);
         }
     }
     public static void Main (String[] args) {
