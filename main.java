@@ -1,6 +1,35 @@
 import java.util.ArrayList;
 
 public class Main {
+     // Part 5- Collection of Appointments
+     static ArrayList<Appointment> appointments = new ArrayList<>();
+
+
+      public static void createAppointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional doctor) {
+            if (doctor != null && patientName != null && patientMobile != null && preferredTimeSlot != null) {
+                Appointment appointment = new Appointment(patientName, patientMobile, preferredTimeSlot, doctor);
+                appointments.add(appointment);
+                System.out.println("Appointment created for " + patientName);
+            } else {
+                System.out.println("Error: All fields must be provided to create an appointment.");
+            }
+        }
+        
+ 
+    public static void printExistingAppointments() {
+        if (appointments.isEmpty()) {
+            System.out.println("No existing appointments found.");
+        } else {
+            System.out.println("Existing Appointments:");
+            for (Appointment appointment : appointments) {
+                appointment.printAppointmentDetails();
+                System.out.println("------------------------------");
+
+            }
+            
+        }
+    }
+
     public static void Main (String[] args) {
 
         GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr Tariqul Islam", "MBBS, DPH NZ, DCH Aus", "My Doctors Clinic Surfers Paradise");
@@ -22,15 +51,6 @@ public class Main {
 
         ArrayList<Appointment> Appointments = new ArrayList<>();
 
-        public static void createAppointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional doctor) {
-            if (doctor != null && patientName != null && patientMobile != null && preferredTimeSlot != null) {
-                Appointment appointment = new Appointment(patientName, patientMobile, preferredTimeSlot, doctor);
-                appointments.add(appointment);
-                System.out.println("Appointment created for " + patientName);
-            } else {
-                System.out.println("Error: All fields must be provided to create an appointment.");
-            }
-        }
-        
+      
     }
 }
