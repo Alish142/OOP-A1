@@ -1,4 +1,4 @@
-public class GeneralPractitioner extends Healthprofessional{
+public class GeneralPractitioner extends HealthProfessional{
     private String clinicName;
 
     public GeneralPractitioner(){
