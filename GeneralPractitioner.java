@@ -17,4 +17,11 @@ public class GeneralPractitioner extends Healthprofessional{
     public void setclinicName(String clinicName){
         this.clinicName = clinicName;
     }
+    @Override
+    public void printDetails(){
+        System.out.println("Type: General Practioner");
+        super.printDetails();
+        System.out.println("Clinic Name: " + clinicName);
+    
+    }
 }
