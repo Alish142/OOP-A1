@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class Main {
+
+     
      // Part 5- Collection of Appointments
      static ArrayList<Appointment> appointments = new ArrayList<>();
 
@@ -47,9 +49,7 @@ public class Main {
         specialist2.printDetails();
         System.out.println("------------------------------");
 
-        System.out.println("Collection of Appointments");
-
-        ArrayList<Appointment> Appointments = new ArrayList<>();
+      
 
       
     }
