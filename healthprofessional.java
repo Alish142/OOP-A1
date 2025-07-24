@@ -15,6 +15,30 @@ public class Healthprofessional {
         this.name = name;
         this.qualification = qualification;
     }
+
+    public int getID(){
+        return id;
+
+    }
+    public String getName() {
+        return name;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
     
     public void printDetails(){
         System.out.println("ID:" + id);
