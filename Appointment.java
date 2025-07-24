@@ -32,3 +32,13 @@ public class Appointment {
         System.out.println("No doctor assigned.");
         }
     }
+
+    //Getter 
+    public String getPatientMobile(){
+        return patientmobile;
+    }
+
+
+    }
+    
+
