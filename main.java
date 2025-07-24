@@ -64,7 +64,22 @@ public class Main {
         specialist2.printDetails();
         System.out.println("------------------------------");
 
-      
+
+       / Part 5 – Collection of appointments
+        System.out.println("------------------------------");
+
+   // 2 appoinments are created   
+        createAppointment("Alish Rana", "0412345678", "09:00", gp1);
+        createAppointment("Ayush Bhat", "0423432289", "10:30", specialist2);
+// printing all exiting ones 
+        System.out.println("------------------------------");
+        printExistingAppointments();
+// cancel the apointment ment by a pateint number 
+        System.out.println("------------------------------");
+        cancelAppointment("0412345678");
+// then printing exiting ones
+        System.out.println("------------------------------");
+        printExistingAppointments();  
 
       
     }
