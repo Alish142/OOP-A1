@@ -31,7 +31,21 @@ public class Main {
             
         }
     }
-
+// deleteing exiting appointments
+      public static void cancelAppointment(String mobile) {
+        boolean found = false;
+        for (int i = 0; i < appointments.size(); i++) {
+            if (appointments.get(i).getPatientMobile().equals(mobile)) {
+                System.out.println("Cancelling appointment for: " + appointments.get(i).getPatientName());
+                appointments.remove(i);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("No appointment found with mobile number: " + mobile);
+        }
+    }
     public static void Main (String[] args) {
 
         GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr Tariqul Islam", "MBBS, DPH NZ, DCH Aus", "My Doctors Clinic Surfers Paradise");
