@@ -1,16 +1,16 @@
-public class Healthprofessional {
+public class HealthProfessional {
     protected int id ;
     protected String name ;
     protected String qualification;
 
 
-    public Healthprofessional(){
+    public HealthProfessional(){
         this.id = 0;
         this.name = "Unknown";
         this.qualification = "Not specified";
     }
 
-    public Healthprofessional(int id, String name, String qualification){
+    public HealthProfessional(int id, String name, String qualification){
         this.id = id;
         this.name = name;
         this.qualification = qualification;
